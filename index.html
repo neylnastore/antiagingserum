@@ -128,7 +128,7 @@
         .price-banner {
             background: linear-gradient(45deg, #ff6b6b, #ee5a52);
             color: white;
-            padding: 15px 0;
+            padding: 8px 0;
             text-align: center;
             position: sticky;
             top: 0;
@@ -140,27 +140,28 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
+            font-size: 0.9em;
         }
 
         .original-price {
             text-decoration: line-through;
             opacity: 0.7;
-            font-size: 1.2em;
+            font-size: 1em;
         }
 
         .current-price {
-            font-size: 2em;
+            font-size: 1.4em;
             font-weight: 700;
             color: #ffeb3b;
         }
 
         .discount {
             background: rgba(255,255,255,0.2);
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.8em;
         }
 
         /* Countdown Timer */
@@ -380,18 +381,19 @@
         /* Order Popup */
         .order-popup {
             position: fixed;
-            bottom: 20px;
-            right: 20px;
+            bottom: 15px;
+            right: 15px;
             background: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-            border-left: 5px solid #ff6b6b;
+            border-radius: 12px;
+            padding: 12px 15px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            border-left: 4px solid #ff6b6b;
             z-index: 1000;
             opacity: 0;
             transform: translateX(100%);
             transition: all 0.5s ease;
-            max-width: 300px;
+            max-width: 240px;
+            font-size: 0.85em;
         }
 
         .order-popup.show {
@@ -401,18 +403,18 @@
 
         .popup-close {
             position: absolute;
-            top: 10px;
-            right: 15px;
+            top: 5px;
+            right: 8px;
             background: none;
             border: none;
-            font-size: 1.2em;
+            font-size: 1em;
             color: #999;
             cursor: pointer;
         }
 
         .popup-avatar {
-            width: 40px;
-            height: 40px;
+            width: 32px;
+            height: 32px;
             border-radius: 50%;
             background: linear-gradient(45deg, #667eea, #764ba2);
             display: inline-flex;
@@ -420,7 +422,8 @@
             justify-content: center;
             color: white;
             font-weight: 700;
-            margin-right: 10px;
+            margin-right: 8px;
+            font-size: 0.8em;
         }
 
         .popup-content {
@@ -435,11 +438,12 @@
         .popup-name {
             font-weight: 700;
             color: #333;
+            font-size: 0.9em;
         }
 
         .popup-location {
             color: #666;
-            font-size: 0.8em;
+            font-size: 0.75em;
         }
 
         /* Responsive Design */
@@ -477,7 +481,12 @@
 
             .price-content {
                 flex-direction: column;
-                gap: 10px;
+                gap: 5px;
+                font-size: 0.8em;
+            }
+
+            .current-price {
+                font-size: 1.2em;
             }
 
             .order-popup {
@@ -485,6 +494,8 @@
                 right: 10px;
                 left: 10px;
                 max-width: none;
+                font-size: 0.8em;
+                padding: 10px 12px;
             }
         }
 
@@ -565,7 +576,7 @@
                     <p class="tagline">Rahasia Kulit Awet Muda Tanpa Suntik - Formula Advanced dengan Peptide Botox untuk Hasil Maksimal dalam 7 Hari</p>
                 </div>
                 <div class="hero-image">
-                    <img src="https://images.unsplash.com/photo-1556228720-195a672e8a03?w=400&h=600&fit=crop&crop=center" alt="Botox Anti-Aging Serum" class="product-image">
+                    <img src="https://cdn.hotishop.com/image/11a23a39f4f9c2208080f901463a9fd51cb12e34-500.png" alt="Botox Anti-Aging Serum" class="product-image">
                 </div>
             </div>
             
@@ -620,6 +631,9 @@
     <section class="benefits">
         <div class="container">
             <h2 class="section-title">4 Keunggulan Utama</h2>
+            <div style="text-align: center; margin-bottom: 40px;">
+                <img src="https://cdn.hotishop.com/image/f85441510eee38a2473d2f25eadb5a14f75c961a-500.png" alt="Botox Anti-Aging Serum Benefits" style="max-width: 300px; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+            </div>
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">
@@ -657,6 +671,9 @@
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title">Testimoni Pengguna</h2>
+            <div style="text-align: center; margin-bottom: 40px;">
+                <img src="https://cdn.hotishop.com/image/b91a5c310628bb2b7aac8d598c6075f54e062334-600.png" alt="Before After Results" style="max-width: 400px; height: auto; border-radius: 15px; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+            </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-header">
@@ -733,6 +750,9 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
+            <div style="text-align: center; margin-bottom: 30px;">
+                <img src="https://cdn.hotishop.com/image/85740185ada26640a63b48d6f5c7457e976ae14f-500.png" alt="Guarantee Satisfaction" style="max-width: 300px; height: auto; border-radius: 15px;">
+            </div>
             <h2 class="section-title">Dapatkan Kulit Awet Muda Sekarang!</h2>
             <p style="font-size: 1.2em; margin-bottom: 40px; color: #666;">Jangan biarkan tanda-tanda penuaan merusak kepercayaan diri Anda</p>
             <a href="https://vera.orderonline.id/botox-anti-aging-serum" class="cta-button" target="_blank">
@@ -752,7 +772,7 @@
                     <div class="popup-name" id="popupName">Andi</div>
                     <div class="popup-location" id="popupLocation">Jakarta</div>
                 </div>
-                <div style="font-size: 0.8em; color: #ff6b6b; margin-top: 5px;">
+                <div style="font-size: 0.75em; color: #ff6b6b; margin-top: 5px;">
                     Baru saja memesan Botox Anti-Aging Serum
                 </div>
             </div>
